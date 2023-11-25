@@ -1,0 +1,67 @@
+{
+  "name": "@awayfl/away-player-embed",
+  "version": "0.1.0",
+  "description": "AwayFL Runtime provider for replacing a flash player",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf --glob ./dist/*",
+    "static": "copyfiles -u 1 ./static/**/* ./dist/assets/",
+    "prebuild": "npm run clean && npm run static",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "version": " npm run build",
+    "postversion": "git commit -a -m Build && git push origin --all && git push origin --tags && npm publish"
+  },
+  "keywords": [
+    "Flash",
+    "AwayFL",
+    "SWF"
+  ],
+  "author": "eXponenta",
+  "license": "MIT",
+  "repository": "https://github.com/awayfl/away-player-embed",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@awayfl/avm1": "^0.2.167",
+    "@awayfl/avm2": "^0.2.209",
+    "@awayfl/awayfl-player": "^0.2.40",
+    "@awayfl/playerglobal": "^0.2.384",
+    "@awayfl/swf-loader": "^0.4.121",
+    "@awayjs/core": "^0.9.44",
+    "@awayjs/graphics": "^0.5.82",
+    "@awayjs/materials": "^0.6.16",
+    "@awayjs/renderer": "^0.11.63",
+    "@awayjs/scene": "^0.13.264",
+    "@awayjs/stage": "^0.11.138",
+    "@awayjs/view": "^0.6.61",
+    "random-seed": "^0.3.0",
+    "rollup-plugin-string": "^3.0.0",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.4.1",
+    "typescript": "^5.2.2"
+  },
+  "lastUsedTags": {
+    "@awayfl/avm1": "v0.0.33",
+    "@awayfl/avm2": "v0.0.33",
+    "@awayfl/awayfl-player": "v0.0.33",
+    "@awayfl/playerglobal": "v0.0.33",
+    "@awayfl/swf-loader": "v0.0.33",
+    "@awayjs/core": "v0.0.33",
+    "@awayjs/graphics": "v0.0.33",
+    "@awayjs/materials": "v0.0.33",
+    "@awayjs/renderer": "v0.0.33",
+    "@awayjs/scene": "v0.0.33",
+    "@awayjs/stage": "v0.0.33",
+    "@awayjs/view": "v0.0.33"
+  }
+}
