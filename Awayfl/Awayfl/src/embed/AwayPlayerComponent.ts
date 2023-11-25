@@ -36,7 +36,7 @@ export interface IBindingConfig {
     onLoad?: string;
     onProgress?: string;
     onError?: string;
-    scaleMode?: string;
+    scaleMode?: boolean;
     autoplay?: boolean;
     backgroundColor?: string;
     splash?: string | boolean,
@@ -89,7 +89,7 @@ export class AwayPlayerComponent extends HTMLElement {
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
         hideBeforeLoad: {required: false, default: false},
-        maxStageScale: {required: false, default: undefined},
+        maxStageScale: {required: false, default: showall},
         backgroundColor: {required: false, default: 'black'},
         splash: {required: false, default: defaultSplashUrl},
         progress: {required: false, default: defaultProgress},
