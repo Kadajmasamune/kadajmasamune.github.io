@@ -89,7 +89,7 @@ export class AwayPlayerComponent extends HTMLElement {
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
         hideBeforeLoad: {required: false, default: false},
-        maxStageScale: {required: false, default: showall},
+        maxStageScale: {required: false, default: undefined},
         backgroundColor: {required: false, default: 'black'},
         splash: {required: false, default: defaultSplashUrl},
         progress: {required: false, default: defaultProgress},
