@@ -1,0 +1,1 @@
+# kadajmasamune.github.io
