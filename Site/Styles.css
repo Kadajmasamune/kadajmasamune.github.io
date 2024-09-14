@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This ensures the body takes up the full height of the viewport */
+}
+
+#Awayfl {
+    text-align: center; /* Center the content horizontally */
+}
+
+#Dragingproperty {
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+
+#stage0 {
+	
+	width: 900px;
+    height: 900px;
+    margin: auto; /* Center horizontally */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+
+/* Styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#flashContainer {
+    max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+    margin: 0 auto;  /* Center the container */
+}
+
+/* Add more media queries as needed for larger screens */
+
+
+

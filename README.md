@@ -1,4 +1,0 @@
-# kadajmasamune.github.io
-
-
-#TETRA
